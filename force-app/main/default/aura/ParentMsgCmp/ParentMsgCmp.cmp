@@ -1,0 +1,7 @@
+<aura:component >
+    <h2>Calling Child Component From parent</h2>
+    <c:ChildMsgCmp aura:id="messages"/>
+    <lightning:button label="showMessage" onclick="{!c.handleShowMessage}" />
+    <lightning:button label="showErrorMessage" onclick="{!c.handleShowErrorMessage}" />
+    <lightning:button label="removeMessage" onclick="{!c.handleRemoveMessage}" />
+</aura:component>

@@ -1,0 +1,21 @@
+<aura:component >
+    <!-- Calling Child Component From parent-->
+    <aura:attribute name="msg" type="string" />
+	<aura:attribute name="className" type="string" />
+    <aura:method name="show" action="{!c.showMessage}"> 
+        <aura:attribute name="message" type="string" default="" access="PUBLIC" />
+    </aura:method>
+    
+    <aura:method name="error" action="{!c.showErrorMessage}">
+        <aura:attribute name="message" type="string" default="" access="PUBLIC"/>
+    </aura:method>
+    
+    <aura:method name="remove" action="{!c.removeErrorMessage}" access="PUBLIC"/>
+    <div>
+        <br />
+        This is the message
+        <span class="{!v.className}">{!v.msg}</span>
+        <br />
+    </div>
+    
+</aura:component>

@@ -1,0 +1,12 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Parent to Child Composition (Grand Parent)" icon-name="standard:account">
+        <div class="slds-p-around_large">
+             <h2>This is Grand Parent</h2>
+            <c-parent></c-parent>
+        </div>
+    </lightning-card>
+</template>
+<!-- Example Contains Grand Parent -> Parent -> 2 Childs 
+Connect Callback loads at the time of that component,
+But Rendered Call back runs after its child got rendered.
+So, First both child rendered will call, then Parent rendered then Grand Parent -->

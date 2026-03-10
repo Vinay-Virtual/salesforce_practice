@@ -1,0 +1,8 @@
+<apex:page >
+    <h2>
+        Heading Here
+    </h2>
+    <p>
+        Body Here
+    </p>
+</apex:page>

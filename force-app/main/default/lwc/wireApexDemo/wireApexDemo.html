@@ -1,0 +1,16 @@
+<template>
+    <lightning-card name="Relatable Contact">
+      <template if:true={records.data}>
+        <h2>{name}</h2>
+      </template>
+      
+        <ul>
+          <template for:each={contacts.data} for:item="contact">
+            <li key={contact.Id}>
+              {contact.FirstName} - {contact.LastName}
+            </li>
+          </template>
+        </ul>
+
+    </lightning-card>
+</template>

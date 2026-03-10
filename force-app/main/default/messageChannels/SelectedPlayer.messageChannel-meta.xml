@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel>
+    <masterLabel>Selected Player</masterLabel>
+    <isExposed>True</isExposed>
+    <description>To Get Selected Player Id</description>
+    <lightningMessageFields>
+        <fieldName>playerId</fieldName>
+        <description>This is for Player Id</description>
+    </lightningMessageFields>    
+</LightningMessageChannel>

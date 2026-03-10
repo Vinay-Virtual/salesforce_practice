@@ -1,0 +1,7 @@
+<aura:component >
+    <aura:attribute name="valueFromChild" type="string" default="Blank"/>
+    This is the value: {!v.valueFromChild}
+    
+    <c:ChildActionCmp aura:id="msg" parentActions="{!c.handleParentAction}" />
+ 
+</aura:component>

@@ -1,0 +1,10 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Row Action" icon-name="utility:user">
+        <lightning-datatable key-field="Id" 
+                            data={accountData}
+                            columns={columns} 
+                            onrowaction={handleRowAction}
+                            hide-checkbox-column>
+        </lightning-datatable>
+    </lightning-card>
+</template>

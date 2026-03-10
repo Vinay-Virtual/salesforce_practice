@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel>
+    <masterLabel>CountingUpdate</masterLabel>
+    <isExposed>True</isExposed>
+    <description>To Count Pass</description>
+    <lightningMessageFields>
+        <fieldName>operator</fieldName>
+        <description>This is operator field</description>
+    </lightningMessageFields>
+     <lightningMessageFields>
+        <fieldName>constant</fieldName>
+        <description>This is number format</description>
+    </lightningMessageFields>
+</LightningMessageChannel>

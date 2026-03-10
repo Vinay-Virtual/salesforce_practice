@@ -1,0 +1,12 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true
+    }
+  ],
+  "name": "sfDeveloper",
+  "namespace": "",
+  "sfdcLoginUrl": "https://vinaymalik-dev-ed.lightning.force.com/",
+  "sourceApiVersion": "56.0"
+}

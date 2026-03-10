@@ -1,0 +1,13 @@
+<aura:component controller="ContactListController" implements="force:hasRecordId,flexipage:availableForAllPageTypes" access="global">
+  <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+  <aura:attribute name="ContactList" type="Object"/>
+  <aura:attribute name="columns" type="List"/>
+  
+  <div style="height: 300px">
+    <lightning:datatable
+            keyField="id"
+            data="{! v.ContactList }"
+            columns="{! v.columns }"
+            hideCheckboxColumn="true"/>
+</div>
+</aura:component>

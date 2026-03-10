@@ -1,0 +1,15 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Row Selection" icon-name="utility:user">
+        <lightning-input type="search"
+                         class="slds-p-around_x_small"
+                         onchange={handleSearch}
+                         label="Search Account"
+                         value={searchKey}>
+        </lightning-input>
+        <lightning-datatable key-field="Id" 
+                            data={accountData}
+                            columns={columns} 
+                            onrowselection={handleSelectedRow}>
+        </lightning-datatable>
+    </lightning-card>
+</template>

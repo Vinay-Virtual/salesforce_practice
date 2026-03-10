@@ -1,0 +1,8 @@
+<aura:component >
+    <aura:attribute name="messageFromNotifier" type="String" />
+    
+    <aura:handler event="c:ApplicationEvent" action="{!c.handleAppEvent}" />
+    
+    <h1>App Event Handler</h1>
+    Value: -{!v.messageFromNotifier }
+</aura:component>

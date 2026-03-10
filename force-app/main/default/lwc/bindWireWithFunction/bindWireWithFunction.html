@@ -1,0 +1,14 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Wire With Function" icon-name="utility:user">
+        <template if:true={accList}>
+            <template for:each={accList} for:item="acc">
+                <lightning-layout key={acc.Id}>
+                    <lightning-layout-item padding="around-small">
+                        {acc.Name}
+                    </lightning-layout-item>
+                </lightning-layout>
+            </template>
+        </template>
+        <div>{error}</div>
+    </lightning-card>
+</template>

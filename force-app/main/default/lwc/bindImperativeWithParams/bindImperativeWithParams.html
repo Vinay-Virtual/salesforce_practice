@@ -1,0 +1,32 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Bind Imperative Method With Params" icon-name="utility:user">
+        <div class="slds-box slds-var-m-around_medium">
+            <lightning-input 
+                onchange={handleChange} 
+                label="Search" 
+                value={searchKey}>
+            </lightning-input>
+        </div>
+        <div class="slds-box slds-var-m-around_medium">
+            <lightning-button 
+                label="Get Accounts" 
+                onclick={handleClick}>
+            </lightning-button>
+
+            <lightning-button 
+                label="Reset" 
+                onclick={handleReset}>
+            </lightning-button>
+        </div>
+        <template if:true={accList}>
+            <template for:each={accList} for:item="acc">
+                <lightning-layout key={acc.Id}>
+                    <lightning-layout-item padding="around-small">
+                        {acc.Name}
+                    </lightning-layout-item>
+                </lightning-layout>
+            </template>
+        </template>
+        <div>{error}</div>
+    </lightning-card>
+</template>

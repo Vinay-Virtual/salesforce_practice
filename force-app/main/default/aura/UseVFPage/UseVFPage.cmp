@@ -1,0 +1,9 @@
+<aura:component >
+    <aura:attribute name="vfHost" type="string" default="vinaymalik-dev-ed--c.vf.force.com" />
+    <h1>
+        This is Component Page
+    </h1>
+    
+    
+    <iframe aura:id="vfPage" src="{!'https://'+ v.vfHost+ '/apex/MyVFPage'}" heigth="100" width="500"/>
+</aura:component>

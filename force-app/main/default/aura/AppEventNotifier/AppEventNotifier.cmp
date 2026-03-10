@@ -1,0 +1,7 @@
+<aura:component >
+    <aura:registerEvent name="appEvent" type="c:ApplicationEvent" />
+    	
+    <h1>Application Event Notifier</h1>
+    <ui:button label="Click Notifier" press="{!c.clickEventNotifier}" />
+    
+</aura:component>

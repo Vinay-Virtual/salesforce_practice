@@ -1,0 +1,7 @@
+<aura:component >
+    <aura:attribute name="parentActions" type="Aura.Action" />
+    <aura:attribute name="valueForChild" type="String" default="Test val from child"/>
+    
+    <lightning:button label="Click" onclick="{!v.parentActions}" />
+    
+</aura:component>

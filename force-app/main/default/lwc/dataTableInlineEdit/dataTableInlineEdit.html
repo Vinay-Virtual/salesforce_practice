@@ -1,0 +1,13 @@
+<template>
+   <lightning-card  variant="Narrow"  title="Inline Edit" icon-name="utility:user">
+        <lightning-datatable key-field="Id"
+                             data={data}
+                             show-row-number-column
+                             onsave={handleSave}
+                             draft-values={saveDraftValues}
+                             hide-checkbox-column
+                             columns={columns}   >
+
+        </lightning-datatable>
+   </lightning-card>
+</template>

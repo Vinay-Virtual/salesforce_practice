@@ -1,0 +1,8 @@
+.title_wrapper {
+    cursor: pointer;
+}
+
+.selected {
+    border: 3px solid blue; 
+    border-radius: 5px;
+}

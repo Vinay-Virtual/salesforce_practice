@@ -1,0 +1,14 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Child to Parent Event" icon-name="standard:account">
+        <div class="slds-p-around_large">
+             <h2>This is Parent</h2>
+            <div>           {countValue}
+            </div>
+        </div>
+    </lightning-card>
+    <c-child-event
+        onsubtract={handleDecrement}
+        onadd={handleIncrement}
+        onmultiply={handleMultiply}>
+    </c-child-event>
+</template>

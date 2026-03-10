@@ -1,0 +1,20 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Parent To Child Event" icon-name="standard:account">
+        <lightning-input 
+            class="slds-p-around_large" 
+            label="Enter Count Value" 
+            value={startCounter} 
+            onchange={handleInputChange}>
+        </lightning-input>
+        
+        <lightning-button 
+            class="slds-m-around_medium" 
+            label="Add 10 to counter" 
+            onclick={handleMaximizeCounter} 
+            variant="brand">
+        </lightning-button>
+    </lightning-card>
+
+    <!-- This is the child component where the counter value will be displayed -->
+     <c-child-event1 counter={startCounter} counterval={counterVal}></c-child-event1>
+</template>

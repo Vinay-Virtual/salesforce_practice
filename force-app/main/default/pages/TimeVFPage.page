@@ -1,0 +1,36 @@
+<apex:page standardController="Opportunity" recordSetVar="opportunities">
+    <apex:includeScript value="{!URLFOR($Resource.jquery)}"/>
+
+    <apex:includeLightning />
+    <h1>
+        Visual Page
+    </h1>
+    <div id="time">
+    </div>
+    
+    <script>
+    alert('sd');
+    var IdList = '{!selected}';
+    console.log('IdList==>');    
+    console.log(IdList);
+    var selected = IdList.replace('[','');
+        selected = selected.replace(']','');
+        selected = selected.replace(/ /g,'');
+    //selected = btoa(selected);
+    console.log('selected==>');    
+    console.log(selected);
+    var selectedArray = [];
+    
+    var array = selected.split(",");
+    $.each(array,function(i){
+       selectedArray.push(array[i]);
+    });
+    console.log('selectedArray==>');
+    console.log(selectedArray)
+    $Lightning.use("c:TimeApp", function(){
+    	$Lightning.createComponent("c:TimeCmp", {'selectedArray':selectedArray}, "time", function(cmp){
+        	console.log("This is the page");
+        });
+    });
+    </script>
+</apex:page>

@@ -1,0 +1,6 @@
+<aura:component>
+    <aura:attribute name="messageTemp" type="String" />
+    <aura:handler name="compEvent" event="c:ComponentEvent" action="{!c.handleCmpEvent}" />
+    <c:ChildComponent />
+    <p>{!v.messageTemp}</p>
+</aura:component>
